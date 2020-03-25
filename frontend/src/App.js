@@ -1,25 +1,17 @@
+//JSX (HTML Integrado dentro do JavaScript)
+
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+
+import './global.css'; 
+
+import Routes from './routes';
 
 function App() {
+  //const [counter, setCounter] = useState(0);
+  //o useState nos retorna um array [valor, função de atualização desse valor]
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          <marquee><i>Hello OmniStack!</i></marquee>
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Routes />
   );
 }
 
